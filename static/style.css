@@ -1,0 +1,118 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f7fb;
+    margin: 0;
+    padding: 40px;
+    color: #2c3e50;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 35px;
+    color: #1f4e79;
+}
+
+h2 {
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 15px;
+    color: #2c3e50;
+}
+
+/* Khung nhập thông tin */
+body > div:not(.tim-kiem) {
+    width: 500px;
+    margin: 0 auto 15px auto;
+}
+.tim-kiem {
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto 20px auto;
+}
+
+.tim-kiem input {
+    width: 100%;
+}
+label {
+    display: inline-block;
+    width: 120px;
+    font-weight: bold;
+}
+
+input {
+    padding: 10px;
+    width: 300px;
+    border: 1px solid #ccd6e0;
+    border-radius: 6px;
+    box-sizing: border-box;
+}
+
+input:focus {
+    outline: none;
+    border-color: #3498db;
+}
+
+/* Nút chính */
+body > button {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+body > button:hover {
+    background-color: #2980b9;
+}
+
+/* Bảng */
+table {
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+    border-collapse: collapse;
+    background-color: white;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+th,
+td {
+    padding: 12px;
+    text-align: center;
+    border: 1px solid #e0e6ed;
+}
+
+th {
+    background-color: #3498db;
+    color: white;
+}
+
+/* Nút Sửa và Xóa */
+td button {
+    padding: 6px 12px;
+    margin: 2px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    color: white;
+}
+
+td button:first-child {
+    background-color: #f39c12;
+}
+
+td button:first-child:hover {
+    background-color: #d68910;
+}
+
+td button:last-child {
+    background-color: #e74c3c;
+}
+
+td button:last-child:hover {
+    background-color: #c0392b;
+}

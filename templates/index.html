@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quản lý sinh viên</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+
+    <h1>QUẢN LÝ SINH VIÊN</h1>
+
+    <div>
+        <label>Mã sinh viên:</label>
+        <input type="text" id="maSV">
+    </div>
+
+    <div>
+        <label>Họ và tên:</label>
+        <input type="text" id="hoTen">
+    </div>
+
+    <div>
+        <label>Lớp:</label>
+        <input type="text" id="lop">
+    </div>
+
+    <button id="nutThemSua" onclick="themSinhVien()">Thêm sinh viên</button>
+    <h2>Danh sách sinh viên</h2>
+
+
+<div class="tim-kiem">
+    <input 
+        type="text" 
+        id="oTimKiem" 
+        placeholder="Nhập mã SV hoặc tên sinh viên để tìm..."
+        oninput="timKiemSinhVien()"
+    >
+</div>
+
+<table border="1">
+        <thead>
+            <tr>
+                <th>Mã SV</th>
+                <th>Họ và tên</th>
+                <th>Lớp</th>
+                <th>Thao tác</th>
+            </tr>
+        </thead>
+
+        <tbody>
+        </tbody>
+    </table>
+<script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
